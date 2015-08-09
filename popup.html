@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script type="text/javascript" src="assets/javascript/angular/angular.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/angular/angular-aria.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/angular/angular-material.js"></script>
+    <script type="text/javascript" src="assets/javascript/angular/angular-material-icons.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript" src="build/app.js"></script>    
+
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/app.css">
+  </head>
+
+  <body ng-app="firecodesnz" ng-controller="mainController">
+    <md-content id="main">
+      <md-toolbar md-scroll-shrink>
+        <div class="md-toolbar-tools">
+          <h2>
+            Fire Codes NZ
+          </h2>
+        </div>
+      </md-toolbar>
+
+      <md-content class="pad">
+        <md-input-container>
+          <label>Lookup by code or word(s)</label>
+          <input type="text" ng-model="query"/>
+        </md-input-container>
+      </md-content>
+
+      <md-content id="results" class="pad">
+        <md-list>
+          <md-list-item ng-repeat="code in allCodes | filter:query" class="md-2-line">
+            <div class="md-list-item-text">
+              <h3>{{code.code}}</h3>
+              <p>{{code.explanation}}</p>
+            </div>
+          </md-list-item>
+        </md-list>
+      </md-content>
+    </md-content>
+
+  </body>
+</html>

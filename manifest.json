@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Foodie",
+  "description": "Food diary",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_title": "Foodie",
+    "default_icon": "assets/icons/app.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "http://*/*"
+  ]
+}
