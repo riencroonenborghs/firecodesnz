@@ -12,6 +12,7 @@ The extension comes pre-built, but you can easily build it yourself (eg after up
 `coffee -o build -c src/*`
 
 ## Install
+- download and unpack the zip file (`Download ZIP` on right side)
 - go to `chrome://extensions`
 - check `Developer mode` (top right)
 - click `Load unpacked extension...` (top left)
