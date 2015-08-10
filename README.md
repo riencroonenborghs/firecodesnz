@@ -3,7 +3,8 @@
 ## What is it?
 It's a simple chrome extension to quickly look up fire codes.
 
-It's based of of this list: http://www.neighbourhood.org.nz/fire_codes.html
+It's based of of [this list](http://pastebin.com/F2jt8zhd)
+which has sources from NZFS Department of Operations and Training, M3-2 Land mobile radio communications Pages 5-6.
 
 ## Build
 
